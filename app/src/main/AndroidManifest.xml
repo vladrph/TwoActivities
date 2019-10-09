@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SecondActivity"
             android:label = "Second Activity"
-            android:parentActivityNams ="MainActivity">
+            android:parentActivityNams =".MainActivity">
             <meta-data
                 android:name = "android.support.PARENT_ACTIVITY"
                 android:value=
