@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String Extra_mssage = ".com.example.android.twoactivites.extra.MESSAGE";
+    public static final String EXTRA_MESSAGE = ".com.example.android.twoactivites.extra.MESSAGE";
     private EditText mMessageEditText;
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "Button Clicked!");
         Intent intent = new Intent(this, SecondActivity.class);
         String message = mMessageEditText.getText().toString();
-        intent.putExtra(Extra_mssage, message);
+        intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 }
